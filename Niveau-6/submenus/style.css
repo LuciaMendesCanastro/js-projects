@@ -1,0 +1,79 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: #efefef;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: calc(100% - 1rem);
+    max-width: 700px;
+}
+
+.card {
+    background: #fff;
+    box-shadow: 0 1px 4px #00000080;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.menu {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    box-shadow: 0 0 2px #00000060;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item-link {
+    color: #000;
+    text-decoration: none;
+    padding: .4rem;
+    border-radius: .5rem;
+    display: block;
+}
+
+.menu-item-link:hover {
+    background: #efefef;
+}
+
+.menu-item-submenu {
+    display: none;
+    position: absolute;
+    background: #fff;
+    flex-direction: column;
+    box-shadow: 0 0 3px #ccc;
+    min-width: 320px;
+    top: 100%;
+}
+
+.menu-item-submenu-visible {
+    display: flex;
+}
+
+.menu-item-submenu-link {
+    padding: .7rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.menu-item-submenu-link:hover {
+    background-color: #efefef;
+}
